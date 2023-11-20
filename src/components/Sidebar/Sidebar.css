@@ -1,0 +1,82 @@
+.sidebar-container{
+    background-color: white;
+    width: max-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(221, 221, 221);
+
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(221, 221, 221);
+    padding: 20px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile-name-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-name{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.side-menu-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.side-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid currentColor; */
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 0px  5px 5px 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.side-menu.selected {
+    background-color: #b1e7ff;
+  }
+
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-top: auto;
+    color: #3186ca;
+    background-color: #f9fdff;
+    font-weight: 500;
+  }
+
