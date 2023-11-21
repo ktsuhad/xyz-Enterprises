@@ -1,12 +1,12 @@
 .plan-card {
-  width: 300px;
+  width: 280px;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0px 20px 20px rgb(221, 221, 221);
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  gap: 7px;
+  /* gap: 7px; */
 }
 
 .plan-card:hover {
@@ -16,11 +16,14 @@
 }
 
 .plan-title {
+  font-size: 18px;
+  margin: 3px 0px;
   font-weight: 600;
 }
 
 .offer {
   position: relative;
+  font-size: 10px;
 }
 
 .offer::after {
@@ -33,17 +36,25 @@
   rotate: 10deg;
 }
 
-.plan-price {
+.price {
+  font-size: 18px;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 .button-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 2px 20px 2px 20px;
+  padding: 5px 20px 5px 20px;
   width: max-content;
   border-radius: 5px;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+
+.button-container span {
+  font-size: 14px;
 }
 
 .explore-button {
@@ -51,13 +62,20 @@
 }
 
 .what-you-get {
+  font-size: 12px;
   font-weight: 200;
+  margin-top: 10px;
 }
 
 .detail-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.horizontal-rule {
+  width: 100%;
+  margin-top: 10px;
 }
 
 .detail-row {
@@ -77,6 +95,10 @@
 .feature-container {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 25px;
 }
 
 .explore-features {

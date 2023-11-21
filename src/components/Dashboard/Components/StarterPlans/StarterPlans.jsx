@@ -5,10 +5,18 @@ const StarterPlans = ({ plan }) => {
   return (
     <div className="starter-plans-container">
       <div className="starter-plan-card">
-        <h6 style={{backgroundColor:plan.color}} className="starter-plan-title">{plan.title}</h6>
+        <h6
+          style={{ backgroundColor: plan.color }}
+          className="starter-plan-title"
+        >
+          {plan.title}
+        </h6>
         <h2>{plan.planName}</h2>
         <p className="starter-plan-description">{plan.detail} </p>
-        <div style={{backgroundColor:plan.color}} className="starter-plan-button">
+        <div
+          style={{ backgroundColor: plan.color }}
+          className="starter-plan-button"
+        >
           <span>{plan.connect}</span>
           <span className="material-symbols-outlined">arrow_right_alt</span>
         </div>

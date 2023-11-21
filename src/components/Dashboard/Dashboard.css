@@ -10,10 +10,10 @@
   align-items: center;
 }
 
-.dashboard-heading h3{
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing:normal;
+.dashbord-heading h3 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: normal;
 }
 
 .switch-box {
@@ -32,8 +32,8 @@
   background-color: #e3f1fe;
 }
 
-
-.month,.annual {
+.month,
+.annual {
   border-radius: 50px;
   padding: 4px 25px;
   cursor: pointer;
@@ -48,9 +48,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 10px;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .unique-features {
@@ -66,15 +65,15 @@
     padding: 20px;
   }
 
-  .dashboard-heading{
+  .dashboard-heading {
     flex-direction: column;
     gap: 10px;
   }
 
-  .dashboard-heading h3{
+  .dashboard-heading h3 {
     text-align: center;
     font-size: 14px;
-    letter-spacing:normal;
+    letter-spacing: normal;
   }
 
   .unique-features {
@@ -83,21 +82,20 @@
   }
 }
 
-
 /* Add this media query for mobile-sized screens */
 @media (max-width: 480px) {
   .dashboard-container {
     padding: 10px;
   }
 
-  .dashboard-heading{
+  .dashboard-heading {
     flex-direction: column;
   }
 
-  .dashboard-heading h3{
+  .dashboard-heading h3 {
     text-align: center;
     font-size: 12px;
-    letter-spacing:normal;
+    letter-spacing: normal;
   }
 
   .unique-features {

@@ -5,14 +5,14 @@ const Plans = ({ plan }) => {
   return (
     <div className="plan-card">
       <h2 className="plan-title">{plan.plan}</h2>
-      <h6 className="offer">$ {plan.price}/mo</h6>
-      <h3 className="price">$ {plan.discountPrice}/mo</h3>
+      <span className="offer">$ {plan.price}/mo</span>
+      <span className="price">$ {plan.discountPrice}/mo</span>
       <div style={{ backgroundColor: plan.color }} className="button-container">
         <span>Get started</span>
         <span className=" material-symbols-outlined">arrow_right_alt</span>
       </div>
       <hr className="horizontal-rule" />
-      <h6 className="what-you-get">what you'll get:</h6>
+      <span className="what-you-get">what you'll get:</span>
       <div className="detail-container">
         <div className="detail-row">
           <span className=" material-symbols-outlined icon">person</span>

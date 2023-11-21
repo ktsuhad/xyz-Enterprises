@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./Dashboard.css";
 import Plans from "./Components/Plans/Plans";
 import StarterPlans from "./Components/StarterPlans/StarterPlans";
+
 const Dashboard = () => {
-  const [isMonthly, setIsMonthly] = useState(true); // Track the switch status
+  const [isMonthly, setIsMonthly] = useState(true);
 
   const plans = [
     {
@@ -35,7 +36,7 @@ const Dashboard = () => {
     },
   ];
 
-  const StarterPlansFeature = [
+  const starterPlans = [
     {
       title: "Free Forever",
       planName: "Free Starter",
@@ -46,17 +47,17 @@ const Dashboard = () => {
       storage: 3,
       support: "Email Support",
       features:
-        " Basics Of Documents, Task Flow, Voting, Accounting, Banking, Notes,investor. Director and Team Management included",
+        "Basics Of Documents, Task Flow, Voting, Accounting, Banking, Notes, Investor. Director and Team Management included",
       color: "#c6ff8e",
     },
     {
       title: "Let's Connect",
       planName: "Enterprise Plan",
       detail:
-        "Effortlessly customize and fine-tune services as your needs shift. ensuring the perfect tools for success",
+        "Effortlessly customize and fine-tune services as your needs shift, ensuring the perfect tools for success",
       connect: "Contact Us",
       users: 75,
-      features: "coustomization off all other features",
+      features: "Customization of all other features",
       color: "#8ab9ff",
     },
   ];
@@ -68,7 +69,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-heading">
-        <h3>Choose a plan that's just right for you !</h3>
+        <h3>Choose a plan that's just right for you!</h3>
         <div className="switch-box" onClick={handleSwitchToggle}>
           <span className={`month ${isMonthly ? "active" : ""}`}>Monthly</span>
           <span className={`annual ${!isMonthly ? "active" : ""}`}>
@@ -78,7 +79,7 @@ const Dashboard = () => {
       </div>
       <div className="plans-card">
         {plans.map((plan, i) => (
-          <Plans key={i} plan={plan} />
+          <Plans key={i} plan={plan}/>
         ))}
       </div>
       <div
@@ -90,14 +91,14 @@ const Dashboard = () => {
           flexWrap: "wrap",
         }}
       >
-        {StarterPlansFeature.map((plan, i) => (
+        {starterPlans.map((plan, i) => (
           <StarterPlans key={i} plan={plan} />
         ))}
       </div>
       <div className="unique-features">
         <span>
-          *some unique 'eatures are provided gs add-ons with individual plans
-          'or each features
+          *some unique features are provided as add-ons with individual plans
+          for each feature
         </span>
       </div>
     </div>

@@ -7,7 +7,6 @@
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgb(238, 238, 238);
   padding: 20px;
-  height: 200px;
 }
 
 .starter-plan-title {
@@ -44,6 +43,7 @@
 /* starter-plan-features */
 .starter-plan-features {
   font-size: 13px;
+  line-height: 15px;
 }
 
 .features {
@@ -57,14 +57,19 @@
   font-size: 15px;
 }
 
-/* Add this media query for tablet-sized screens */
+/*  media query for tablet-sized screens */
 @media (max-width: 768px) {
   .starter-plans-container {
-    height: auto;
+    height: 280px;
+    padding: 10px;
+  }
+
+  .starter-plan-features {
+    font-size: 10px;
   }
 }
 
-/* Add this media query for mobile-sized screens */
+/*  media query for mobile-sized screens */
 @media (max-width: 480px) {
   .starter-plans-container {
     height: auto;

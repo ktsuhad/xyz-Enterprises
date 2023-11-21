@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/rammohan.png";
 
 const SideBar = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState("Dashboard");
@@ -11,6 +11,7 @@ const SideBar = () => {
 
   return (
     <div className="sidebar-container">
+      {/* profile */}
       <div className="profile">
         <img src={profile} alt="profile-image" />
         <div className="profile-content">
@@ -18,14 +19,15 @@ const SideBar = () => {
             <span className="profile-name">Ram Mohan</span>
             <span
               style={{ color: "#408fce" }}
-              className="material-symbols-outlined"
+              className="material-symbols-outlined profile-icon"
             >
               chevron_right
             </span>
           </div>
-          <span>rammohan2@gmail.com</span>
+          <span className="profile-mail">rammohan2@gmail.com</span>
         </div>
       </div>
+
       <div className="side-menu-container">
         <div
           className={`side-menu ${
@@ -33,8 +35,10 @@ const SideBar = () => {
           }`}
           onClick={() => handleMenuClick("Dashboard")}
         >
-          <span className="material-symbols-outlined">dashboard</span>
-          <span>Dashboard</span>
+          <span className="material-symbols-outlined menu-icons">
+            dashboard
+          </span>
+          <span className="side-menu-title">Dashboard</span>
         </div>
         <div
           className={`side-menu ${
@@ -42,8 +46,10 @@ const SideBar = () => {
           }`}
           onClick={() => handleMenuClick("Perks")}
         >
-          <span className="material-symbols-outlined">dashboard</span>
-          <span>Perks</span>
+          <span className="material-symbols-outlined menu-icons">
+            potted_plant
+          </span>
+          <span className="side-menu-title">Perks</span>
         </div>
         <div
           className={`side-menu ${
@@ -51,8 +57,10 @@ const SideBar = () => {
           }`}
           onClick={() => handleMenuClick("Addons")}
         >
-          <span className="material-symbols-outlined">dashboard</span>
-          <span>Addons</span>
+          <span className="material-symbols-outlined menu-icons">
+            extension
+          </span>
+          <span className="side-menu-title">Addons</span>
         </div>
         <div
           className={`side-menu ${
@@ -60,8 +68,8 @@ const SideBar = () => {
           }`}
           onClick={() => handleMenuClick("FAQ")}
         >
-          <span className="material-symbols-outlined">quiz</span>
-          <span>FAQ</span>
+          <span className="material-symbols-outlined menu-icons">quiz</span>
+          <span className="side-menu-title">FAQ</span>
         </div>
         <div
           className={`side-menu ${
@@ -69,14 +77,19 @@ const SideBar = () => {
           }`}
           onClick={() => handleMenuClick("Support")}
         >
-          <span className="material-symbols-outlined">dashboard</span>
-          <span>Support</span>
+          <span className="material-symbols-outlined menu-icons">
+            support_agent
+          </span>
+          <span className="side-menu-title">Support</span>
         </div>
       </div>
+
       {/* Logout button */}
       <div className="logout">
-        <span>Logout</span>
-        <span className="material-symbols-outlined">power_settings_new</span>
+        <span className="side-menu-title">Logout</span>
+        <span className="material-symbols-outlined menu-icons">
+          power_settings_new
+        </span>
       </div>
     </div>
   );

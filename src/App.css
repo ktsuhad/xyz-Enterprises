@@ -1,5 +1,17 @@
-body {
+/* body {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+} */
+
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set to 100% of the viewport height */
+}
+
+.content-container {
+  display: flex;
+  flex: 1; /* Takes up remaining space */
 }
